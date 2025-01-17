@@ -1,16 +1,8 @@
 // Given a string s, remove all its adjacent duplicate characters recursively, until there are no adjacent duplicate characters left.
-
-
-//{ Driver Code Starts
-// Initial Template for C++
-
+ 
 #include <bits/stdc++.h>
 using namespace std;
-
-
-// } Driver Code Ends
-// User function template for C++
-
+ 
 class Solution {
   public:
     string solve(string &s){
@@ -41,9 +33,7 @@ class Solution {
         return solve(s);
     }
 };
-
-//{ Driver Code Starts.
-
+ 
 int main() {
     int t;
     string tc;
@@ -64,4 +54,4 @@ int main() {
     }
     return 0;
 }
-// } Driver Code Ends
+ 
