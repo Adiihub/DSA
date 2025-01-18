@@ -31,7 +31,6 @@ int main() {
     Solution sol;
     int n, k;
     
-    // Taking input for n and k
     cout << "Enter value of n: ";
     cin >> n;
     cout << "Enter value of k: ";
