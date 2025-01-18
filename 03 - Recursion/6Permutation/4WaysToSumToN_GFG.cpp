@@ -1,11 +1,10 @@
-//{ Driver Code Starts
 #include <bits/stdc++.h> 
 using namespace std; 
  
 class Solution
 {
   public:
-    // function to count the total  
+    // function to count the total    
     // number of ways to sum up to 'N' 
     int Ways(int arr[], int n, int sum){
         if(sum == 0)

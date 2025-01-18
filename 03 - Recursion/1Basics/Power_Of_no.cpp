@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// Given a number n, find the value of n raised to the power of its own reverse.
+// Given number n, find the value of n raised to the power of its own reverse.
 
 class Solution {
   public:
@@ -13,7 +12,7 @@ class Solution {
         return n * power(n, p, i+1);
     }
     int reverseExponentiation(int n) {
-        int no =n;
+        int no = n;
         int rev = 0;
         while(n!=0){
             int ld = n%10;

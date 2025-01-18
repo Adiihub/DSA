@@ -19,6 +19,7 @@ int sum2(int a[],int n,int i){
     //int BadaAns=a[i]+sum2(a,n,i+1);
     return a[i]+sum2(a,n,i+1);
 }
+
 int main(){
     int a[]={1,2,3,4,5};
     int n=sizeof(a)/sizeof(int);

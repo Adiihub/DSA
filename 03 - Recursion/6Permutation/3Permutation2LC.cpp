@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <set>
-
 using namespace std;
 
 class Solution {
@@ -29,7 +28,6 @@ public:
 int main() {
     Solution solution;
 
-    // Example input
     vector<int> nums = {1, 1, 2};
 
     // Get unique permutations
