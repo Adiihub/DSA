@@ -13,6 +13,7 @@ int fibo(int n){
 int fibo_memo(int n, int dp[]){
     if(n <= 1)
     return n;
+
     // check kar rahe h ki pahle se ans calculated h ya nahi
     if(dp[n] != -1){
         return dp[n];
@@ -23,8 +24,8 @@ int fibo_memo(int n, int dp[]){
     return dp[n];
 }
 
-// Tabular DP / Bottom up approach
 
+// Tabular DP / Bottom up approach
 int fibo_Tabular(int n){
     int dp[n+1];
     // base case -> as a intilization
