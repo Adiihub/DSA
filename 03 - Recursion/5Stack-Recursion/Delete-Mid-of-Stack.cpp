@@ -11,7 +11,6 @@ class Solution {
         }
         int topEle = s.top();
         s.pop();
-        
         deleteM(s, n-1, mid);
         s.push(topEle);
         
