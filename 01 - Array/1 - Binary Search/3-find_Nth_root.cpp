@@ -12,11 +12,8 @@ int power(int x,int n){
     }
     return p;
 }
-
-
-
+ 
 //Optimized code
-
 int findNthRoot(int n,int m){
     long  lo=1,hi=m;
 
