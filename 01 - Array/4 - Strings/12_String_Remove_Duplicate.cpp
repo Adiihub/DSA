@@ -5,16 +5,14 @@ int main() {
 	string s;
 	getline(cin, s);
 	int n=s.size();
+	string res;
 
 	for(int i=0; i<n; i++){
-		if(i%2 == 0){
-			s[i] = s[i] + 1;
-		}
-		else{
-			s[i] = s[i] - 1;
+		res += s[i];
+		while(s[i] == s[i+1]){
+			i++;
 		}
 	}
-	cout<<s<<endl;
-
+	cout<<res<<endl;
 	return 0;
 }

@@ -4,14 +4,15 @@ using namespace std;
 int main() {
 	string s;
 	getline(cin, s);
-	int n=s.size();
-
+	int n=s.length();
+	
 	for(int i=0; i<n; i++){
-		if(i%2 == 0){
-			s[i] = s[i] + 1;
+		if(s[i] >= 'a' && s[i] <= 'z'){
+			// s[i] = toupper(s[i]);
+			s[i] = s[i] - 'a' + 'A';
 		}
 		else{
-			s[i] = s[i] - 1;
+			s[i] = tolower(s[i]);
 		}
 	}
 	cout<<s<<endl;
