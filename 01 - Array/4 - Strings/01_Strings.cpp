@@ -48,7 +48,7 @@ int  main(){
     //size()-> find length of string
     //cout<<s3.size()<<endl;
 
-    //substr(pos,len )-> to find substrig
+    //substr(pos,len )-> to find substring
     // cout<<s3.substr(2,4)<<endl;
     // cout<<s3.substr(0)<<endl;
 
