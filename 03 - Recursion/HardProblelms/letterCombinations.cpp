@@ -4,9 +4,7 @@ using namespace std;
 string arr[10]={".",".","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
 int n;
 void solve(string& digits,string& output,int i){
-    // base 
     if(i==n){
-        // print
         cout<<output<<endl;
 
         return ;
