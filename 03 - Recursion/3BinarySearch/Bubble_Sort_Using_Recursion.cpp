@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 void BubbleSort_rec(int a[], int n, int i)
 {
-    // base case
     if (i == 1)
         return;
     // ek element ko sahi jagah pe me pahucha deta hu
@@ -32,6 +32,7 @@ void bs(int a[], int n)
     }
     bs(a, n - 1);
 }
+
 int main()
 {
     int arr[] = {4, 3, 2, 1};
