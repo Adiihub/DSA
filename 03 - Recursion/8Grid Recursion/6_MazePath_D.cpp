@@ -18,7 +18,6 @@ void mazepath(int n, int m, string path, vector<string>&paths, int i, int j, int
  	mazepath(n, m, path+'V', paths, i+1, j, count); //right
  	mazepath(n, m, path+'H', paths, i, j+1, count);  // diagonal
 	mazepath(n, m, path+'D', paths, i+1, j+1, count); // down
-
 	 
 }
 int main() {

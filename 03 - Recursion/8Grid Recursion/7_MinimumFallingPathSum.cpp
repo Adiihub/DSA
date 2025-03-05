@@ -1,8 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+ 
 class Solution {
     public:
+    
         int minFallingPSum(vector<vector<int>>&matrix, int i, int j, int n, int m, vector<vector<int>>&dp){
             if(j < 0 || j >= m){
                 return INT_MAX;
@@ -10,7 +12,7 @@ class Solution {
             if(i == n-1){
                 return matrix[i][j];
             }
-            if(dp[i][j] != -1){
+            if(dp[i][j] != INT_MAX){
                 return dp[i][j];
             }
             int left = minFallingPSum(matrix, i+1, j-1, n, m, dp);
@@ -19,11 +21,12 @@ class Solution {
     
             return dp[i][j] = matrix[i][j] + min({left, down, dia});
         }
+    
         int minFallingPathSum(vector<vector<int>>& matrix) {
             int n = matrix.size();
             int m = matrix[0].size();
     
-            vector<vector<int>>dp(n, vector<int>(m, -1));
+            vector<vector<int>>dp(n, vector<int>(m, INT_MAX));
     
             int ans = INT_MAX;
             for(int j=0; j<m; j++){
@@ -31,4 +34,4 @@ class Solution {
             }
             return ans;
         }
-    };
+    }; 
