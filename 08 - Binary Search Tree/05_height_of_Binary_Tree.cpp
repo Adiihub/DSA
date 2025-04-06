@@ -37,7 +37,6 @@ int maxDepth(node* root) {
 }
 
 // Second Method
-
 int height(node* root){
     if(root == NULL)
         return 0;

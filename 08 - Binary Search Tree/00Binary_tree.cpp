@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-
 // //      1
 // //     /  \
 // //     2   3
@@ -53,13 +51,11 @@ void PreOrder(node* root){
 }
 
 //in Order traversal
-
 void inOrder(node* root){
     // base case
     if(root==NULL){
         return ;
     }
-
     // LST
     inOrder(root->left);
     //print root
@@ -70,7 +66,6 @@ void inOrder(node* root){
 
 
 // Post Order Traversal
-
 void postOrder(node* root){
     // base case
     if(root==NULL)
@@ -87,7 +82,6 @@ int countNode(node* root){
     if(root==NULL)
         return 0;
 
-    // recurrence
     // number of nodes in LST
     int ln=countNode(root->left);
 
@@ -112,6 +106,24 @@ int Height(node* root){
     return height;
 }
 
+int countLeaves(node* root) {
+    if (root == NULL)
+        return 0;
+    if (!root->left && !root->right)
+        return 1;
+    
+    return countLeaves(root->left) + countLeaves(root->right);
+}
+
+int countNonLeafNodes(node* root) {
+    if(root == NULL || (root->left == NULL && root->right == NULL)){
+        return 0;
+    }
+    else{
+        return (1 + countNonLeafNodes(root->left) + countNonLeafNodes(root->right));
+    } 
+}
+
 int main(){
     node* root=buildTree();
     cout<<"Pre Order traversal:"<<endl;
@@ -123,6 +135,7 @@ int main(){
     cout<<"Post Order traversal:"<<endl;
     postOrder(root);
     cout<<endl;
+    cout<<"Number of nodes in tree: "<<countNode(root)<<endl;
 
     cout<<"Number of nodes: "<<countNode(root)<<endl;
     cout<<"Height: "<<Height(root)<<endl;

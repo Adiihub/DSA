@@ -4,7 +4,6 @@ using namespace std;
 // Count Binary Strings Without Consecutive 1's
 
 int count(int n, int ld){
-    // base case
     if(n == 0){
         return 0;
     }
